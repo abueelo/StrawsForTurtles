@@ -10,6 +10,7 @@
   float: left;
   width: 29%;
   padding: 5px;
+  max-width: 1847px;
 }
 
 /* Clearfix (clear floats) */
@@ -21,7 +22,18 @@
 </style>
 
 	<title>Turtles like Plastic Straws</title>
-	
+	<style type="text/css">
+
+		body{ margin:0px }
+		div#middle{ min-width: 1847px; } <!-- 1847px --//>
+		div#straw{ min-width: 550%;}
+		div#else{ min-width: 1005px; }
+
+
+
+	</style>
+
+
 </head>
 
 <! Hello.
@@ -38,6 +50,7 @@ I made this website for school work over the Coronavirus break. You can see the 
 
 
 <body style="background-color:lightseagreen;">
+
 	
 	<h1><font color="Green"><u><bold>Why Turtles need Plastic Straws</bold></u></font></h1>
 	<br>
@@ -47,18 +60,20 @@ I made this website for school work over the Coronavirus break. You can see the 
 
 </div>
 	<br>
-<div>
+<div id="middle">
 	<p><font>Turtles are very dumb. This is why they like to use straws as snorkels.</font></p>
 	<marquee scrollamount="15"><img src="turtle with straw.png", height="250", width="371"></marquee>
 	<p>Turtles live inside the water but they do not breathe water therefore they must inhale the O₂. This is why we must give them snorkels.</p> 
 	<div class="row">
-		<div class="column">
-			<img src="straw throwing.jpg", height="440", width="440">
+		<div id="else">
+			<div class="column">
+				<img src="straw throwing.jpg", height="440", width="440">
+			</div>
+			<div class="column">
+				<img src="straw beach.png", height="440", width="440">
+			</div>
 		</div>
-		<div class="column">
-			<img src="straw beach.png", height="440", width="440">
-		</div>
-		<div class="column">
+		<div class="column", id="straw">
 			<p><font size="5" color="Green"><bold>&emsp;<u>With straw - Alive</u> &emsp; &emsp; &emsp; &ensp;<u>Without Straw - Dead</bold></u></font></p>
 			<img src="turtle with straw.png", width="296", height="200">
 			<img src="turtle without straw.png", width="200", height="170">
